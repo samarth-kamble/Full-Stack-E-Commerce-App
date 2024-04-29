@@ -7,10 +7,10 @@ import { CiShoppingCart } from "react-icons/ci";
 import navLinks from "@/lib/lib";
 import Image from "next/image";
 
-export default function Navbar() {
+const Navbar = () => {
   const pathname = usePathname();
   return (
-    <header className="mb-8 pt-5 pb-5 border-b">
+    <header className="pt-5 pb-5 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
           <Image src={"/logo.png"} alt="Logo" height={100} width={100} />
@@ -37,6 +37,7 @@ export default function Navbar() {
             </div>
           ))}
         </nav>
+
         <div className="flex gap-5">
           <Link href="/cart">
             <Button
@@ -61,4 +62,6 @@ export default function Navbar() {
       </div>
     </header>
   );
-}
+};
+
+export default Navbar;

@@ -1,8 +1,8 @@
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Men", href: "/Men" },
-  { name: "Women", href: "/Women" },
-  { name: "Teens", href: "/Teens" },
+  { name: "Proucts", href: "/products" },
+  { name: "Laptop", href: "/laptop" },
+  { name: "Mobile", href: "/mobile" },
 ];
 
 export default navLinks;
